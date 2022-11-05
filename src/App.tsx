@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Application } from './application/Application';
+import { Skills } from './skills/Skills';
 
 function App() {
   return (
     <div className="App">
-      <Application />
+      <Skills skills={['first', 'second', 'third']} />
     </div>
   );
 }
