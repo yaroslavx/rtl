@@ -17,7 +17,7 @@ describe('Application', () => {
         })
         expect(sectionHeading).toBeInTheDocument()
 
-        const pElement = screen.getByText('All fields are mandatory')
+        const pElement = screen.getByText(content => content.includes('mandatory'))
         expect(pElement).toBeInTheDocument()
 
         const titleElement = screen.getByTitle('close')
