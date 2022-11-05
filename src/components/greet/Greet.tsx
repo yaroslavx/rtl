@@ -1,9 +1,7 @@
-type GreetProps = {
-    name?: string
-}
+import { GreetProps } from "./greet.types"
 
 export const Greet: React.FC<GreetProps> = ({ name }) => {
     return (
-        <div>Hello {name}</div>
+        <div>Hello {name ? name : "Guest"}</div>
     )
 }
