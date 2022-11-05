@@ -4,7 +4,9 @@ export const Application = () => {
             <h1>Jop application form</h1>
             <h2>Section 1</h2>
             <p>All fields are mandatory</p>
+            <span title="close">X</span>
             <img src="" alt="Random_picture" />
+            <div data-testid='custom-element'>Custom element</div>
             <form>
                 <div>
                     <label htmlFor="name">Name</label>

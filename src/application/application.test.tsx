@@ -20,8 +20,14 @@ describe('Application', () => {
         const pElement = screen.getByText('All fields are mandatory')
         expect(pElement).toBeInTheDocument()
 
+        const titleElement = screen.getByTitle('close')
+        expect(titleElement).toBeInTheDocument()
+
         const imgElement = screen.getByAltText('Random_picture')
         expect(imgElement).toBeInTheDocument()
+
+        const dataElement = screen.getByTestId('custom-element')
+        expect(dataElement).toBeInTheDocument()
 
         const nameElement = screen.getByRole('textbox', {
             name: 'Name'
