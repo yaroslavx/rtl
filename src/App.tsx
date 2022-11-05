@@ -1,13 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Skills } from './skills/Skills';
+import { Counter } from './counter/Counter';
+import { AppProviders } from './providers/AppProviders';
+import { MuiMode } from './mui/MuiMode';
 
 function App() {
   return (
-    <div className="App">
-      <Skills skills={['first', 'second', 'third']} />
-    </div>
+    <AppProviders>
+
+      <div className="App">
+        <MuiMode />
+      </div>
+    </AppProviders>
   );
 }
 

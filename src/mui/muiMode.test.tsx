@@ -1,0 +1,6 @@
+
+describe('MuiMode', () => {
+    test('', () => {
+
+    })
+})
