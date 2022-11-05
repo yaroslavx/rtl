@@ -10,7 +10,7 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoggedIn(true)
-        }, 3000);
+        }, 500);
     }, [])
 
     return (
