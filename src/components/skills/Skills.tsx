@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react";
-import { SkillsProps } from "./skills.types";
+import { useEffect, useState } from 'react'
+import { SkillsProps } from './skills.types'
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
+    setIsLoggedIn(true)
+  }
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoggedIn(true);
-    }, 500);
-  }, []);
+      setIsLoggedIn(true)
+    }, 500)
+  }, [])
 
   return (
     <>
       <ul>
         {skills.map((skill) => {
-          return <li key={skill}>{skill}</li>;
+          return <li key={skill}>{skill}</li>
         })}
       </ul>
       {isLoggedIn ? (
@@ -26,5 +26,5 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
         <button onClick={handleLogin}>Login</button>
       )}
     </>
-  );
-};
+  )
+}

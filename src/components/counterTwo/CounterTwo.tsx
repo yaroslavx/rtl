@@ -1,5 +1,5 @@
-import React from "react";
-import { CounterTwoProps } from "./counterTwo.types";
+import React from 'react'
+import { CounterTwoProps } from './counterTwo.types'
 
 export const CounterTwo = ({
   count,
@@ -13,5 +13,5 @@ export const CounterTwo = ({
       {handleIncrement && <button onClick={handleIncrement}>Inc</button>}
       {handleDecrement && <button onClick={handleDecrement}>Dec</button>}
     </div>
-  );
-};
+  )
+}

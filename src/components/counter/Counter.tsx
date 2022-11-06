@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 export const Counter = () => {
-  const [count, setCount] = useState(0);
-  const [amount, setAmount] = useState(0);
+  const [count, setCount] = useState(0)
+  const [amount, setAmount] = useState(0)
 
   const handleClick = () => {
-    setCount(count + 1);
-  };
+    setCount(count + 1)
+  }
 
   return (
     <div>
@@ -20,5 +20,5 @@ export const Counter = () => {
       />
       <button onClick={() => setCount(amount)}>Set</button>
     </div>
-  );
-};
+  )
+}
