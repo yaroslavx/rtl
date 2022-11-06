@@ -1,9 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Counter } from './counter/Counter';
-import { AppProviders } from './providers/AppProviders';
-import { MuiMode } from './mui/MuiMode';
+import { MuiMode } from './components/mui/MuiMode';
+import { AppProviders } from './components/providers/AppProviders';
 
 function App() {
   return (
