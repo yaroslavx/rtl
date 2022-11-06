@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { MuiMode } from './components/mui/MuiMode';
-import { AppProviders } from './components/providers/AppProviders';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { MuiMode } from "./components/mui/MuiMode";
+import { AppProviders } from "./providers/AppProviders";
 
 function App() {
   return (
     <AppProviders>
-
       <div className="App">
         <MuiMode />
       </div>
